@@ -1,7 +1,9 @@
 import styled from 'styled-components/native';
 import { FlatList } from 'react-native';
+import { ReactNode } from 'react';
 
 interface Product {
+  [x: string]: ReactNode;
   id: number;
   name: string;
   description: string;
